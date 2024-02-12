@@ -3,7 +3,7 @@ import "./portfolio.css";
 import IMG1 from "../../assets/SpaceMission.png";
 import IMG2 from "../../assets/ShinyPokemon.png";
 import IMG3 from "../../assets/Todo.png";
-import IMG4 from "../../assets/Raise.png";
+import IMG4 from "../../assets/Simon.png";
 import React from "react";
 
 //Portfolio function
@@ -38,12 +38,12 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: "Raise",
+      title: "Simon Says",
       img: IMG4,
       description:
-        "Get started with free educational courses to mastery the foundations of startup equity as an African business.",
-      technologies: "Remix | React.js | Webflow | jQuery",
-      link: "https://www.raise.africa/",
+        "Classic memory game",
+      technologies: "React.js | useState | useEffect",
+      link: "https://simon-says-game-ewi8.onrender.com",
     },
   ];
 
