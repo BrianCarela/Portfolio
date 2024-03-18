@@ -13,7 +13,7 @@ const Intro = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src="https://mygeneralimages.s3.us-east-2.amazonaws.com/selfie.jpeg" alt="Brian Carela" />
+            <img src={"https://mygeneralimages.s3.us-east-2.amazonaws.com/selfie.jpeg"} alt="Brian Carela" />
           </div>
         </div>
         <div className="about__content">
