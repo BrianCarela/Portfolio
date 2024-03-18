@@ -5,6 +5,8 @@ import React from "react";
 import { VscFolderLibrary } from "react-icons/vsc";
 // import img from "../../assets/Me.jpeg";
 
+const img = "https://mygeneralimages.s3.us-east-2.amazonaws.com/selfie.jpeg"
+
 const Intro = () => {
   return (
     <section id="about">
@@ -13,7 +15,7 @@ const Intro = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={"https://mygeneralimages.s3.us-east-2.amazonaws.com/selfie.jpeg"} alt="Brian Carela" />
+            <img src={img} alt="Brian Carela" />
           </div>
         </div>
         <div className="about__content">
