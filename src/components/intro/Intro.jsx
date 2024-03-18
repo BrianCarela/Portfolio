@@ -3,9 +3,7 @@ import "./intro.css";
 import { FaAward } from "react-icons/fa";
 import React from "react";
 import { VscFolderLibrary } from "react-icons/vsc";
-// import img from "../../assets/Me.jpeg";
-
-const img = "https://mygeneralimages.s3.us-east-2.amazonaws.com/selfiecopy.jpg"
+import img from "../../assets/selfiecopy.jpg";
 
 const Intro = () => {
   return (
