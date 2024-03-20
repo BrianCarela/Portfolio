@@ -30,13 +30,13 @@ const Intro = () => {
             </article>
           </div>
           <p>
-            Able Full-stack Developer with over 8 years of expertise in building Web & Mobile applications development.
+            Full-stack Developer with over 8 years of expertise in building Web & Mobile applications development.
             <br />
             My goal is to deliver efficient and effective solutions, and I adhere to the following principles in my work:
             <br />
             - I focus on providing solutions that address the client's needs and solve their problems.
             <br />
-            - I believe in keeping my clients engaged throughout the development process, ensuring them.
+            - I believe in keeping my clients engaged throughout the development process.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
