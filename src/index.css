@@ -38,7 +38,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
+  /* background-image: url(../src/assets/bg-texture.png); */
 }
 
 .container {
@@ -133,4 +133,27 @@ img {
   section > h2 {
     margin-bottom: 2rem;
   }
+}
+
+/* Keyframes for panning animation */
+@keyframes slowPan {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Apply animation to the background triangles */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 500%;
+  background-image: url('../src/assets/bg-texture.png'); 
+  animation: slowPan 120s linear infinite;
+  z-index: -1; /* Ensure it's behind all content */
 }
