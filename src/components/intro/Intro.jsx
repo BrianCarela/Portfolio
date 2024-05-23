@@ -7,7 +7,12 @@ import img from "../../assets/selfiecopy.jpg";
 
 const Intro = () => {
   const handleDownloadResume = () => {
-    window.location.href = '/Resume.pdf';
+    const link = document.createElement('a');
+    link.href = '/resume.pdf';
+    link.download = 'Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   
