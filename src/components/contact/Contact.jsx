@@ -17,7 +17,33 @@ const Contact = () => {
         provided :)
       </h5>
       <h2>Contact Me</h2>
-
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="email">
+          Email Address
+        </label>
+        <input
+          id="email"
+          type="email" 
+          name="email"
+        />
+        <ValidationError 
+          prefix="Email" 
+          field="email"
+          errors={state.errors}
+        />
+        <textarea
+          id="message"
+          name="message"
+        />
+        <ValidationError 
+          prefix="Message" 
+          field="message"
+          errors={state.errors}
+        />
+        <button type="submit" disabled={state.submitting}>
+          Submit
+        </button>
+      </form>
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
