@@ -23,7 +23,7 @@ const Intro = () => {
               <h5>Experience</h5>
               <small>7+ year</small>
             </article>
-            <article href="#projects" className="about__card">
+            <article href="#portfolio" className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
               <small>32+ Completed Projects</small>
