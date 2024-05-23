@@ -1,4 +1,3 @@
-/* Existing footer styles */
 footer {
     background: var(--color-primary);
     padding: 3rem 0;
@@ -69,11 +68,11 @@ footer {
   /* New styles for diagonal stripes */
   @keyframes panStripes {
     from {
-      background-position: 0 0;
-    }
-    to {
-      background-position: 200% 0;
-    }
+        transform: translateX(-50%);
+      }
+      to {
+        transform: translateX(0%);
+      }
   }
   
   footer::before {
@@ -85,12 +84,12 @@ footer {
     height: 100%;
     background: repeating-linear-gradient(
       -45deg,
-      rgba(255, 255, 255, 0.03),
-      rgba(255, 255, 255, 0.03) 10px,
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.04) 10px,
       transparent 10px,
       transparent 20px
     );
-    animation: panStripes 60s linear infinite;
-    z-index: 1; /* Ensure it's behind the footer content */
+    animation: panStripes 120s linear infinite;
+    z-index: 1; /* Ensure it's in front of the footer content */
   }
   
