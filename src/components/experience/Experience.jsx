@@ -7,7 +7,7 @@ const Experience = () => {
     <section id="experience">
       <h5>The Skills I Have</h5>
       <h2>Skills</h2>
-      <div className="container experience__container">
+      <div className="container experience__container sand-stripes">
         <div className="experience__frontend">
           <h3>Full-stack Development</h3>
           <div className="experience__content">
