@@ -30,13 +30,12 @@ const Intro = () => {
             </article>
           </div>
           <p>
-            Full-stack Developer with over 8 years of expertise in building Web & Mobile applications development.
+            Seasoned software engineering educator with a strong background in full-stack JavaScript development, Python programming, and expertise in JavaScript, React, Node.js, MongoDB, and TypeScript technologies.
             <br />
-            My goal is to deliver efficient and effective solutions, and I adhere to the following principles in my work:
+            Over 7 years of experience instructing and guiding students in mastering these languages and frameworks.
             <br />
-            - I focus on providing solutions that address the client's needs and solve their problems.
+            Now seeking to transition from teaching to a hands-on role as a software engineer, eager to apply my extensive knowledge and practical skills to contribute meaningfully to dynamic development projects and collaborative teams.
             <br />
-            - I believe in keeping my clients engaged throughout the development process.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
