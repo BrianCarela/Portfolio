@@ -123,6 +123,11 @@ img {
   section {
     margin-top: 6rem;
   }
+  html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling on all devices */
+    width: 100vw; /* Prevents horizontal scrolling caused by wider elements */
+    position: relative; /* Ensure proper positioning for the pseudo-element */
+  }
 }
 
 @media screen and (max-width: 600px){
@@ -204,5 +209,5 @@ body::before {
     transparent 20px
   );
   animation: panStripes 60s linear infinite;
-  z-index: 0; /* Ensure it's behind the container content */
+  z-index: 1; /* Ensure it's behind the container content */
 }
