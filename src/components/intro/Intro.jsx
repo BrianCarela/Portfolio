@@ -23,11 +23,13 @@ const Intro = () => {
               <h5>Experience</h5>
               <small>7+ year</small>
             </article>
-            <article href="#portfolio" className="about__card">
+            <a href="#portfolio">
+            <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
               <small>32+ Completed Projects</small>
             </article>
+            </a>
           </div>
           <p>
             Seasoned software engineering educator with a strong background in full-stack JavaScript development, Python programming, and expertise in JavaScript, React, Node.js, MongoDB, and TypeScript technologies.
