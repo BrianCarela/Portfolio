@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("xpzveljg");
+  const [state, handleSubmit] = useForm(process.env.REACT_APP_EMAIL_CODE);
   if (state.succeeded) {
     return <div className="container contact__container">
       <p className="thank-you-message">Thanks for sending me a message!!</p>
