@@ -41,6 +41,12 @@ body {
   overflow-x:hidden;
 }
 
+html, body {
+  height: 100%; /* Ensure the body takes the full height of the viewport */
+  margin: 0; /* Remove default margin */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
