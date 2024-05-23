@@ -174,7 +174,7 @@ body::before {
 
 /* Reusable class for sand-colored containers with stripes */
 .sand-stripes {
-  border-radius: 10%;
+  border-radius: 4rem;
   width: 70%; /* keeping relatively the same width*/
   position: relative; /* Ensure proper positioning for the pseudo-element */
   overflow: hidden; /* Hide overflow from the pseudo-element */
