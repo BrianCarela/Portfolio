@@ -21,7 +21,7 @@ const Contact = () => {
         provided
       </h5>
       <h2>Contact Me</h2>
-      <div className="container contact__container">
+      <div className="container contact__container sand-stripes">
           <form onSubmit={handleSubmit} className="contact__form">
           <label htmlFor="email">
             Email Address
@@ -56,7 +56,7 @@ const Contact = () => {
       <br />
       <div className="container">
         <div className="contact__options">
-          <article className="contact__option">
+          <article className="contact__option sand-stripes">
             <div className="contact__option-children">
               <MdOutlineEmail className="contact__option-icon" />
               <MdLocationCity className="contact__option-icon" />
