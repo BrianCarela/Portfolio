@@ -21,13 +21,13 @@ const Intro = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>7+ year</small>
+              <small>Click here to download my resume!</small>
             </article>
             <a href="#portfolio">
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>32+ Completed Projects</small>
+              <small>Click here to see them!</small>
             </article>
             </a>
           </div>
