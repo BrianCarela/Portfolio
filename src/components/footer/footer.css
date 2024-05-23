@@ -1,64 +1,96 @@
+/* Existing footer styles */
 footer {
     background: var(--color-primary);
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
     margin-top: 7rem;
-}
-
-footer a {
+    position: relative; /* ADD FOR BACKGROUND ANIMATION */
+    overflow: hidden;   /* ADD FOR BACKGROUND ANIMATION */
+  }
+  
+  footer a {
     color: var(--color-bg);
-}
-
-.footer__logo {
+  }
+  
+  .footer__logo {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 2rem;
     display: inline-block;
-}
-
-.permalinks {
+  }
+  
+  .permalinks {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     margin: 0 auto 3rem;
-}
-
-.footer__socials {
+  }
+  
+  .footer__socials {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 4rem;
-}
-
-.footer__socials a {
+  }
+  
+  .footer__socials a {
     background: var(--color-bg);
     color: var(--color-white);
     padding: 0.8rem;
     border-radius: 0.7rem;
     display: flex;
     border: 1px solid transparent;
-}
-
-.footer__socials a:hover {
+  }
+  
+  .footer__socials a:hover {
     background: transparent;
     color: var(--color-bg);
     border-color: var(--color-bg);
-}
-
-.footer__copyright {
+  }
+  
+  .footer__copyright {
     margin-bottom: 4rem;
     color: var(--color-bg);
-}
+  }
   
-@media screen and (max-width: 600px){
+  @media screen and (max-width: 600px) {
     .permalinks {
-        flex-direction: column;
-        gap: 1.5rem;
+      flex-direction: column;
+      gap: 1.5rem;
     }
-
+  
     .footer__socials {
-        margin-bottom: 2.6rem;
+      margin-bottom: 2.6rem;
     }
-}
+  }
+  
+  /* New styles for diagonal stripes */
+  @keyframes panStripes {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 200% 0;
+    }
+  }
+  
+  footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.03),
+      rgba(255, 255, 255, 0.03) 10px,
+      transparent 10px,
+      transparent 20px
+    );
+    animation: panStripes 60s linear infinite;
+    z-index: 1; /* Ensure it's behind the footer content */
+  }
+  
