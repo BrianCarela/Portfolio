@@ -10,11 +10,11 @@ const Header = () => {
         <h5>Hello I'm</h5>
         <h1>Brian Carela</h1>
         <h5 className="text-light">Full-Stack Developer</h5>
-        <CTA />
-        <a href="#contact" className="scroll__down">
+{/*         <CTA /> */}
+{/*         <a href="#contact" className="scroll__down">
           Scroll Down
-        </a>
-        <HeaderSocials />
+        </a> */}
+{/*         <HeaderSocials /> */}
       </div>
     </header>
   );
