@@ -49,3 +49,52 @@
 .contact__option h4 {
   font-weight: 500;
 }
+
+/* I ADDED STYLES FOR THE FORM */
+.contact__container {
+  background-color: #cea567; /* Sand color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form label {
+  margin-bottom: 10px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact__form button {
+  background-color: #e74c3c; /* Red color matching the "Live Demo" buttons */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact__form button:hover {
+  background-color: #dc421c;
+}
+
+
+.thank-you-message {
+  background-color: #cea567; /* Sand color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
