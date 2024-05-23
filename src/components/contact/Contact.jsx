@@ -2,10 +2,11 @@ import "./contact.css";
 
 import React from "react";
 import { MdOutlineEmail, MdLocationCity } from "react-icons/md";
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm(process.env.REACT_APP_EMAIL_CODE);
+  const [state, handleSubmit] = useForm("xpzveljg");
   if (state.succeeded) {
     return <div className="container contact__container">
       <p className="thank-you-message">Thanks for sending me a message!!</p>
@@ -49,17 +50,25 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      
+      <br />
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
             <div className="contact__option-children">
               <MdOutlineEmail className="contact__option-icon" />
               <MdLocationCity className="contact__option-icon" />
+              <FaGithub className="contact__option-icon" />
+              <FaLinkedin className="contact__option-icon" />
             </div>
             <div className="contact__option-children">
               <h5>BrianCarela@gmail.com</h5>
               <h5>New York, NY</h5>
+              <a target="blank_" href="https://github.com/BrianCarela" className="link">
+                <h5>github.com/BrianCarela</h5>
+              </a>
+              <a target="blank_" href="https://www.linkedin.com/in/briancarela/" className="link">
+                <h5>www.linkedin.com/in/briancarela/</h5>
+              </a>
             </div>
           </article>
         </div>
