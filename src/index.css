@@ -126,12 +126,20 @@ img {
 }
 
 @media screen and (max-width: 600px){
+  nav {
+    display: none;
+  }
   .container {
     width: var(--container-width-sm);
   }
 
   section > h2 {
     margin-bottom: 2rem;
+  }
+  html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling on all devices */
+    width: 100vw; /* Prevents horizontal scrolling caused by wider elements */
+    position: relative; /* Ensure proper positioning for the pseudo-element */
   }
 }
 
