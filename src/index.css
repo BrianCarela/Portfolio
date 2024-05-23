@@ -195,6 +195,6 @@ body::before {
     transparent 10px,
     transparent 20px
   );
-  animation: panStripes 120s linear infinite;
+  animation: panStripes 60s linear infinite;
   z-index: 0; /* Ensure it's behind the container content */
 }
