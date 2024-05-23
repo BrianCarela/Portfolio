@@ -90,7 +90,7 @@
   background-color: #dc421c;
 }
 
-input{
+input, button{
   z-index: 2;
 }
 
