@@ -29,13 +29,13 @@ const Intro = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card" onClick={handleDownloadResume}>
+            <article className="about__card sand-stripes" onClick={handleDownloadResume}>
               <FaAward className="about__icon" />
               <h5>Experience</h5>
               <small>Click here to download my resume!</small>
             </article>
             <a href="#portfolio">
-            <article className="about__card">
+            <article className="about__card sand-stripes">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
               <small>Click here to see them!</small>
