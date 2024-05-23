@@ -54,7 +54,7 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {soloProjects.map((pro) => (
-          <article className="portfolio__item" key={pro.id}>
+          <article className="portfolio__item sand-stripes" key={pro.id}>
             <div className="portfolio__item-image">
               <img src={pro.img} alt={pro.title} />
             </div>

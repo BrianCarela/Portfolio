@@ -4,11 +4,12 @@ import React from "react";
 import { MdOutlineEmail, MdLocationCity } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { useForm, ValidationError } from '@formspree/react';
+import { FORMSPREE_ID } from '../../constants';
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm(process.env.REACT_APP_EMAIL_CODE);
+  const [state, handleSubmit] = useForm(`${FORMSPREE_ID}`);
   if (state.succeeded) {
-    return <div className="container contact__container">
+    return <div className="container contact__container sand-stripes">
       <p className="thank-you-message">Thanks for sending me a message!!</p>
     </div>
     
@@ -36,10 +37,11 @@ const Contact = () => {
             field="email"
             errors={state.errors}
           />
-            <label htmlFor="message">
+          <label htmlFor="message">
             Message
           </label>
-          <textarea
+          <input
+            type="text"
             id="message"
             name="message"
           />
