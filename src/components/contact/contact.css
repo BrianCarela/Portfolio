@@ -90,6 +90,9 @@
   background-color: #dc421c;
 }
 
+input{
+  z-index: 2;
+}
 
 .thank-you-message {
   background-color: #cea567; /* Sand color */
