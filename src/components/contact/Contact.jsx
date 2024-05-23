@@ -36,6 +36,9 @@ const Contact = () => {
             field="email"
             errors={state.errors}
           />
+            <label htmlFor="message">
+            Message
+          </label>
           <textarea
             id="message"
             name="message"
