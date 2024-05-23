@@ -38,7 +38,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  overflow-x: hidden;
+  overflow-x:hidden;
 }
 
 .container {
@@ -156,4 +156,45 @@ body::before {
   background-image: url('../src/assets/bg-texture.png'); 
   animation: slowPan 120s linear infinite;
   z-index: -1; /* Ensure it's behind all content */
+}
+
+/*
+  TESTING SOME STRIPES
+*/
+
+/* Keyframes for diagonal stripe panning animation */
+@keyframes panStripes {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Reusable class for sand-colored containers with stripes */
+.sand-stripes {
+  border-radius: 10%;
+  width: 70%; /* keeping relatively the same width*/
+  position: relative; /* Ensure proper positioning for the pseudo-element */
+  overflow: hidden; /* Hide overflow from the pseudo-element */
+  background-color: var(--color-bg-variant); /* Sand color */
+}
+
+.sand-stripes::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.04) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  animation: panStripes 120s linear infinite;
+  z-index: 0; /* Ensure it's behind the container content */
 }
