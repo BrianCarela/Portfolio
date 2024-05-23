@@ -5,45 +5,51 @@ import { MdOutlineEmail, MdLocationCity } from "react-icons/md";
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("<YOUR_EMAIL_CODE_HERE>");
+  const [state, handleSubmit] = useForm(process.env.REACT_APP_EMAIL_CODE);
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+    return <div className="container contact__container">
+      <p className="thank-you-message">Thanks for sending me a message!!</p>
+    </div>
+    
   }
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
       <h5>
         I do receive your messages and will respond asap if the valid email is
-        provided :)
+        provided
       </h5>
       <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="email">
-          Email Address
-        </label>
-        <input
-          id="email"
-          type="email" 
-          name="email"
-        />
-        <ValidationError 
-          prefix="Email" 
-          field="email"
-          errors={state.errors}
-        />
-        <textarea
-          id="message"
-          name="message"
-        />
-        <ValidationError 
-          prefix="Message" 
-          field="message"
-          errors={state.errors}
-        />
-        <button type="submit" disabled={state.submitting}>
-          Submit
-        </button>
-      </form>
+      <div className="container contact__container">
+          <form onSubmit={handleSubmit} className="contact__form">
+          <label htmlFor="email">
+            Email Address
+          </label>
+          <input
+            id="email"
+            type="email" 
+            name="email"
+          />
+          <ValidationError 
+            prefix="Email" 
+            field="email"
+            errors={state.errors}
+          />
+          <textarea
+            id="message"
+            name="message"
+          />
+          <ValidationError 
+            prefix="Message" 
+            field="message"
+            errors={state.errors}
+          />
+          <button type="submit" disabled={state.submitting}>
+            Submit
+          </button>
+        </form>
+      </div>
+      
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
