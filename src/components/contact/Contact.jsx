@@ -2,8 +2,13 @@ import "./contact.css";
 
 import React from "react";
 import { MdOutlineEmail, MdLocationCity } from "react-icons/md";
+import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("<YOUR_EMAIL_CODE_HERE>");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
