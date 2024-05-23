@@ -54,7 +54,7 @@ const Contact = () => {
         </form>
       </div>
       <br />
-      <div className="container contact__container">
+      <div className="container">
         <div className="contact__options">
           <article className="contact__option">
             <div className="contact__option-children">
