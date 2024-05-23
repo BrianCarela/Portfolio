@@ -6,6 +6,11 @@ import { VscFolderLibrary } from "react-icons/vsc";
 import img from "../../assets/selfiecopy.jpg";
 
 const Intro = () => {
+  const handleDownloadResume = () => {
+    window.location.href = '/Resume.pdf';
+  };
+
+  
   return (
     <section id="about">
       <h5>Get to know</h5>
@@ -18,7 +23,7 @@ const Intro = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
+            <article className="about__card" onClick={handleDownloadResume}>
               <FaAward className="about__icon" />
               <h5>Experience</h5>
               <small>Click here to download my resume!</small>
