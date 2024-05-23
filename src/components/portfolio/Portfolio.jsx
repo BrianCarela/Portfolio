@@ -16,7 +16,7 @@ const Portfolio = () => {
       description:
         "A website that hosts information about Rover and it's last mission to Mars",
       technologies: "React.js | Axios | API | Router",
-      link: "https://mars-space-mission.onrender.com/",
+      link: "https://master.d2xpnjxqz7lqxv.amplifyapp.com/",
     },
     {
       id: 2,
