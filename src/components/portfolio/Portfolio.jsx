@@ -56,7 +56,7 @@ const Portfolio = () => {
         {soloProjects.map((pro) => (
           <article className="portfolio__item sand-stripes" key={pro.id}>
             <div className="portfolio__item-image">
-              <img src={pro.img} alt={pro.title} />
+              <a href={pro.link} target="_blank"><img src={pro.img} alt={pro.title} /></a>
             </div>
             <div className="portfolio__item-content">
               <h3>{pro.title}</h3>
