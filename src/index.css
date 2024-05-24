@@ -171,7 +171,7 @@ body::before {
   top: 0;
   left: 0;
   width: 200%;
-  height: 500%;
+  height: 100%;
   background-image: url('../src/assets/bg-texture.png'); 
   animation: slowPan 120s linear infinite;
   z-index: -1; /* Ensure it's behind all content */
