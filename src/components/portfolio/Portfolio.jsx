@@ -14,7 +14,7 @@ const Portfolio = () => {
       title: "Space Mission",
       img: IMG1,
       description:
-        "A website that hosts information about Rover and it's last mission to Mars",
+        "A website that hosts information about Rover and it's last mission to Mars. \n Hosted on AWS",
       technologies: "React.js | Axios | API | Router",
       link: "https://master.d2xpnjxqz7lqxv.amplifyapp.com/",
     },
@@ -23,8 +23,8 @@ const Portfolio = () => {
       title: "Shiny Pokedex",
       img: IMG2,
       description:
-        "Search for any Pokemon, and get a sprite of it and it's shiny version!",
-      technologies: "React | Typescript | Redux.js | AWS Amplify | Axios | MUI",
+        "Search for any Pokemon, and get a sprite of it and it's shiny version! \n Hosted on AWS",
+      technologies: "React | Typescript | Redux.js | Axios | MUI",
       link: "https://main.d1f39cd726hpq9.amplifyapp.com/",
     },
     {
