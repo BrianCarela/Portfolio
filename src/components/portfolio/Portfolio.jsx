@@ -1,7 +1,7 @@
 import "./portfolio.css";
 
 import IMG1 from "../../assets/SpaceMission.png";
-import IMG2 from "../../assets/ShinyPokemon.png";
+import IMG2 from "../../assets/pokedex.png";
 import IMG3 from "../../assets/Todo.png";
 import IMG4 from "../../assets/Simon.png";
 import React from "react";
@@ -20,12 +20,12 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: "Shiny Pokemon App",
+      title: "Shiny Pokedex",
       img: IMG2,
       description:
-        "Search for any Pokemon, and get an image of it's shiny version!",
-      technologies: "React | React Native | Hooks | Axios",
-      link: "https://shiny-pokemon-app.onrender.com/",
+        "Search for any Pokemon, and get a sprite of it and it's shiny version!",
+      technologies: "React | Typescript | Redux.js | AWS Amplify | Axios | MUI",
+      link: "https://main.d1f39cd726hpq9.amplifyapp.com/",
     },
     {
       id: 3,
