@@ -45,9 +45,9 @@ const Intro = () => {
           <p>
             Seasoned software engineering educator with a strong background in full-stack JavaScript development, Python programming, and expertise in JavaScript, React, Node.js, MongoDB, and TypeScript technologies.
             <br />
-            Over 7 years of experience instructing and guiding students in mastering these languages and frameworks.
+            Over 7 years of experience instructing and mastering these languages and frameworks.
             <br />
-            Now seeking to transition from teaching to a hands-on role as a software engineer, eager to apply my extensive knowledge and practical skills to contribute meaningfully to dynamic development projects and collaborative teams.
+            A fast learner, eager to apply extensive knowledge and practical skills to contribute meaningfully to dynamic development projects and collaborative teams.
             <br />
           </p>
           <a href="#contact" className="btn btn-primary">
