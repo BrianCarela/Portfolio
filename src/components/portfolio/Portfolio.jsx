@@ -3,7 +3,7 @@ import "./portfolio.css";
 import IMG1 from "../../assets/SpaceMission.png";
 import IMG2 from "../../assets/pokedex.png";
 import IMG3 from "../../assets/Todo.png";
-import IMG4 from "../../assets/Simon.png";
+import IMG4 from "../../assets/movies.png";
 import React from "react";
 
 //Portfolio function
@@ -38,12 +38,12 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: "Simon Says",
+      title: "M_Flix",
       img: IMG4,
       description:
-        "Classic memory game",
-      technologies: "React.js | useState | useEffect",
-      link: "https://simon-says-game-ewi8.onrender.com",
+        "Sample movie database. Titles and plot are indexed for optimized searches. \n Hosted on AWS",
+      technologies: "MERN Stack | AWS Amplify | AWS Elastic Beanstalk | AWS S3",
+      link: "https://main.d3ncaymhpccumj.amplifyapp.com/",
     },
   ];
 
